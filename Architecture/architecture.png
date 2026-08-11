@@ -1,0 +1,22 @@
+                       ┌──────────────────────┐
+                       │   Windows Endpoint   │
+                       └──────────┬───────────┘
+                                  │
+             ┌──────────────────────────────────────────┐
+             │                                          │
+      ┌──────▼──────┐                            ┌──────▼─────────────┐
+      │ Wazuh Agent │                            │ Splunk Universal   │
+      │             │                            │ Forwarder (UF)     │
+      └──────┬──────┘                            └──────┬─────────────┘
+             │                                          │
+             ▼                                          ▼
+      ┌─────────────┐                            ┌─────────────┐
+      │    Wazuh    │                            │   Splunk    │
+      │   Server    │                            │     SIEM    │
+      └──────┬──────┘                            └──────┬──────┘
+             │                                          │
+             ▼                                          ▼
+       FIM / Alerts                              SPL / Analysis
+       Endpoint Events                           Windows Logs
+       Security Monitoring                         Detections
+       Vulnerability Monitoring                    Dashboards
