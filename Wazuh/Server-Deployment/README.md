@@ -125,4 +125,5 @@ Password: <ADMIN_PASSWORD>
 
 * Change the Wazuh Dashboard admin password.
 
-    sudo /usr/share/wazuh-indexer/plugins/opensearch-security/tools/wazuh-passwords-tool.sh -u admin -p 'YourNewPassword'
+      sudo /usr/share/wazuh-indexer/plugins/opensearch-security/tools/wazuh-passwords-tool.sh -u admin -p 'YourNewPassword'
+  Use special characters for password.(.  *  +  ?  -)
