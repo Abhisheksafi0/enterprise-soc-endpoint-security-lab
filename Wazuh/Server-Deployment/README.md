@@ -127,3 +127,9 @@ Password: <ADMIN_PASSWORD>
 
       sudo /usr/share/wazuh-indexer/plugins/opensearch-security/tools/wazuh-passwords-tool.sh -u admin -p 'YourNewPassword'
   Use special characters for password.(.  *  +  ?  -)
+
+  ## 11. Open the server IP on browser.
+  <img width="1916" height="1014" alt="Screenshot 2026-08-13 100648" src="https://github.com/user-attachments/assets/f4ce4cbc-6def-4e7f-864c-82609a6aa2cd" />
+
+Now you are there Wazuh Dashboard.
+<img width="1912" height="1017" alt="Screenshot 2026-08-13 100737" src="https://github.com/user-attachments/assets/6ce9f910-0834-4b8b-9b93-b2ed033df22d" />
