@@ -1,11 +1,12 @@
-# Installing Wazuh Agents on Windows Endpoints
+# * Installing Wazuh Agents on Windows Endpoints
 
 Installing the Wazuh Agent on Windows endpoints to collect logs and monitor security activity.
 The agent connects to the Wazuh Server for centralized monitoring and security analysis.
 It helps detect suspicious activity and generate security alerts for investigation.
 
+--> Note:- Linux Agent Installation ⬇️
 
-## describe all installation in the all steps
+## describe all installation in the all steps        
 
 ### Step 1 :-
 The first step should be generating the Windows Agent download and installation command from the Wazuh Server/Dashboard.
@@ -33,3 +34,6 @@ Run the following command in PowerShell on the Windows Agent PC to download, ins
   Start the Wazuh Agent.
 
     NET START Wazuh
+
+### Now open the Wazuh Server Dashboard and verify the agent status.
+<img width="1919" height="732" alt="Screenshot 2026-08-14 183212" src="https://github.com/user-attachments/assets/f8e76ec0-e9d4-4875-a411-73e71aa3b0b1" />
