@@ -37,3 +37,44 @@ Run the following command in PowerShell on the Windows Agent PC to download, ins
 
 ### Now open the Wazuh Server Dashboard and verify the agent status.
 <img width="1919" height="732" alt="Screenshot 2026-08-14 183212" src="https://github.com/user-attachments/assets/f8e76ec0-e9d4-4875-a411-73e71aa3b0b1" />
+
+ ------------------------------------------------------------------------------------------------------------------------
+
+# * Installing Wazuh Agents on Linux Endpoints
+
+Installing the Wazuh Agent on Linux endpoints to collect logs and monitor security activity.
+
+## describe all installation in the all steps 
+
+Step 1 :-
+The first step should be generating the Linux Agent download and installation command from the Wazuh Server/Dashboard.
+In Agent Summary, click “Deploy New Agent.” You will then see an interface like the one shown below.
+<img width="1920" height="1008" alt="Screenshot 2026-08-14 040211" src="https://github.com/user-attachments/assets/a0d5453f-36da-4ddc-9faa-d78fcb4791c3" />
+
+<img width="1920" height="1008" alt="Screenshot 2026-08-14 040239" src="https://github.com/user-attachments/assets/b0de6ca3-04e0-459f-9393-094f1aa50624" />
+
+### Step 2:-
+--> Select the Operating System: Choose Linux.
+
+--> Assign the Server Address: Enter the Wazuh Server IP address.
+
+--> Assign an Agent Name: Enter a unique name for the Linux endpoint.
+
+--> Select the Agent Group: Choose the Default group.
+
+### Steps 3:-
+
+Run the following command in CMD on the Linux Agent PC to download, install
+
+    wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.14.7-1_amd64.deb && sudo WAZUH_MANAGER='192.168.1.37' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='Linux_host' dpkg -i ./wazuh-agent_4.14.7-1_amd64.deb
+
+<img width="1920" height="1008" alt="Screenshot 2026-08-14 041145" src="https://github.com/user-attachments/assets/a29d2958-1710-4116-afe8-679cb25062f5" />
+
+Start the agent:
+
+      sudo systemctl daemon-reload
+    sudo systemctl enable wazuh-agent
+    sudo systemctl start wazuh-agent
+
+### Now open the Wazuh Server Dashboard and verify the agent status.
+<img width="1919" height="746" alt="Screenshot 2026-08-14 104645" src="https://github.com/user-attachments/assets/5740e45d-0d8e-47fa-903c-89e1421b8a6c" />
