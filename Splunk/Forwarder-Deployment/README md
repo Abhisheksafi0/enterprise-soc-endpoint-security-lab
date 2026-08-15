@@ -1,9 +1,0 @@
-# * Installing Forwarder Deployment on Windows 
-
-Installing the Splunk Universal Forwarder on Windows endpoints to securely collect and send system logs to the Splunk Server for centralized monitoring and analysis.
-
---> Note:- Linux Agent Installation ⬇️
-
-## describe all installation in the all steps        
-
-### Step 1 :-
