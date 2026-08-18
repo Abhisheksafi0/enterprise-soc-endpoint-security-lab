@@ -31,6 +31,12 @@ including Microsoft Defender Antivirus and Windows system events.
 
 <img width="1920" height="942" alt="Screenshot 2026-08-17 122014" src="https://github.com/user-attachments/assets/752b2dff-6ced-4006-bc98-5878d3a70d3f" />
 
+### Successful logons Events
+
+The Wazuh agent successfully collected Windows endpoint events,
+including Successful logons Events.
+
+<img width="1919" height="841" alt="02-windows-monitoring-events" src="https://github.com/user-attachments/assets/e1a6810b-ab1a-432e-a14b-efb076b4c92e" />
 
 
 
