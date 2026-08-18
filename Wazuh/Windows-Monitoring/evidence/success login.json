@@ -1,0 +1,92 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.08.17",
+  "_id": "YefHEKAB6QP7ZQI2Ir-I",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "input": {
+      "type": "log"
+    },
+    "agent": {
+      "ip": "192.168.2.112",
+      "name": "Manwin",
+      "id": "010"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "subjectLogonId": "0x3e7",
+          "subjectDomainName": "WORKGROUP",
+          "targetLinkedLogonId": "0x0",
+          "impersonationLevel": "%%1833",
+          "authenticationPackageName": "Negotiate",
+          "targetLogonId": "0x1e7925",
+          "logonProcessName": "Advapi",
+          "logonGuid": "{00000000-0000-0000-0000-000000000000}",
+          "targetUserName": "SQLTELEMETRY$MSSQLSERVER02",
+          "keyLength": "0",
+          "elevatedToken": "%%1842",
+          "subjectUserSid": "S-1-5-18",
+          "processId": "0x334",
+          "processName": "C:\\\\Windows\\\\System32\\\\services.exe",
+          "targetDomainName": "NT Service",
+          "targetUserSid": "S-1-5-80-590528046-1859546738-3804865184-803384734-759104483",
+          "virtualAccount": "%%1842",
+          "logonType": "5",
+          "subjectUserName": "DESKTOP-68SKUSJ$"
+        },
+        "system": {
+          "eventID": "4624",
+          "keywords": "0x8020000000000000",
+          "providerGuid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "level": "0",
+          "channel": "Security",
+          "opcode": "0",
+          "message": "\"An account was successfully logged on.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tDESKTOP-68SKUSJ$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3E7\r\n\r\nLogon Information:\r\n\tLogon Type:\t\t5\r\n\tRestricted Admin Mode:\t-\r\n\tVirtual Account:\t\tYes\r\n\tElevated Token:\t\tYes\r\n\r\nImpersonation Level:\t\tImpersonation\r\n\r\nNew Logon:\r\n\tSecurity ID:\t\tS-1-5-80-590528046-1859546738-3804865184-803384734-759104483\r\n\tAccount Name:\t\tSQLTELEMETRY$MSSQLSERVER02\r\n\tAccount Domain:\t\tNT Service\r\n\tLogon ID:\t\t0x1E7925\r\n\tLinked Logon ID:\t\t0x0\r\n\tNetwork Account Name:\t-\r\n\tNetwork Account Domain:\t-\r\n\tLogon GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0x334\r\n\tProcess Name:\t\tC:\\Windows\\System32\\services.exe\r\n\r\nNetwork Information:\r\n\tWorkstation Name:\t-\r\n\tSource Network Address:\t-\r\n\tSource Port:\t\t-\r\n\r\nDetailed Authentication Information:\r\n\tLogon Process:\t\tAdvapi  \r\n\tAuthentication Package:\tNegotiate\r\n\tTransited Services:\t-\r\n\tPackage Name (NTLM only):\t-\r\n\tKey Length:\t\t0\r\n\r\nThis event is generated when a logon session is created. It is generated on the computer that was accessed.\r\n\r\nThe subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.\r\n\r\nThe logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).\r\n\r\nThe New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.\r\n\r\nThe network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.\r\n\r\nThe impersonation level field indicates the extent to which a process in the logon session can impersonate.\r\n\r\nThe authentication information fields provide detailed information about this specific logon request.\r\n\t- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.\r\n\t- Transited services indicate which intermediate services have participated in this logon request.\r\n\t- Package name indicates which sub-protocol was used among the NTLM protocols.\r\n\t- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.\"",
+          "version": "2",
+          "systemTime": "2026-08-17T17:31:17.8853066Z",
+          "eventRecordID": "3613363",
+          "threadID": "4120",
+          "computer": "DESKTOP-68SKUSJ",
+          "task": "12544",
+          "processID": "840",
+          "severityValue": "AUDIT_SUCCESS",
+          "providerName": "Microsoft-Windows-Security-Auditing"
+        }
+      }
+    },
+    "rule": {
+      "firedtimes": 6,
+      "mail": false,
+      "level": 3,
+      "description": "Service logon event registered from non standard service account.",
+      "groups": [
+        "windows",
+        " WEF"
+      ],
+      "id": "67024"
+    },
+    "location": "EventChannel",
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "id": "1786987878.8546961",
+    "timestamp": "2026-08-17T17:31:18.712+0000"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-08-17T17:31:18.712Z"
+    ]
+  },
+  "highlight": {
+    "data.win.system.eventID": [
+      "@opensearch-dashboards-highlighted-field@4624@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1786987878712
+  ]
+}
