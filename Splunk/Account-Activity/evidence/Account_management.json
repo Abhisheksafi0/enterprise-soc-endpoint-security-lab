@@ -1,0 +1,84 @@
+	
+08/19/2026 03:43:08.802 PM
+LogName=Security
+EventCode=4726
+EventType=0
+ComputerName=DESKTOP-VFCO3RU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=5216833
+Keywords=Audit Success
+TaskCategory=Filtering Platform Connection
+OpCode=Info
+Message=A user account was deleted.
+
+Subject:
+	Security ID:		S-1-5-21-1099084074-832591393-3804378270-1001
+	Account Name:		abhis
+	Account Domain:		DESKTOP-VFCO3RU
+	Logon ID:		0x4374574
+
+Target Account:
+	Security ID:		S-1-5-21-1099084074-832591393-3804378270-1009
+	Account Name:		YOU_HACKED
+	Account Domain:		DESKTOP-VFCO3RU
+
+Additional Information:
+	Privileges	-
+Collapse
+Event Actions
+Type	
+Field	Value	Actions
+Selected	
+Account_Name
+abhis	
+YOU_HACKED	
+source
+WinEventLog:Security	
+sourcetype
+WinEventLog:Security	
+Event	
+Account_Domain
+DESKTOP-VFCO3RU	
+DESKTOP-VFCO3RU	
+ComputerName
+DESKTOP-VFCO3RU	
+EventCode
+4726	
+EventType
+0	
+Keywords
+Audit Success	
+LogName
+Security	
+Logon_ID
+0x4374574	
+Message
+A user account was deleted. Subject: Security ID: S-1-5-21-1099084074-832591393-3804378270-1001 Account Name: abhis Account Domain: DESKTOP-VFCO3RU Logon ID: 0x4374574 Target Account: Security ID: S-1-5-21-1099084074-832591393-3804378270-1009 Account Name: YOU_HACKED Account Domain: DESKTOP-VFCO3RU Additional Information: Privileges -	
+OpCode
+Info	
+RecordNumber
+5216833	
+Security_ID
+S-1-5-21-1099084074-832591393-3804378270-1001	
+S-1-5-21-1099084074-832591393-3804378270-1009	
+SourceName
+Microsoft Windows security auditing.	
+TaskCategory
+Filtering Platform Connection	
+Type
+Information	
+Time	
+_time
+2026-08-19T15:43:08.802+05:30
+Default	
+host
+DESKTOP-VFCO3RU	
+index
+main	
+linecount
+26	
+punct
+//_::._====-=___.===_=__==____.\r\r:\rt_:tt-------\rt_	
+splunk_server
+DESKTOP-VFCO3RU
