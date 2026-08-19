@@ -34,9 +34,11 @@ including Microsoft Defender Antivirus and Windows system events.
 ### logons Events(Event ID 4624,4625)
 
 The Wazuh agent successfully collected Windows endpoint events,
-including Successful logons Events.
+including Successful, Failed  logons Events.
 
 <img width="1919" height="841" alt="02-windows-monitoring-events" src="https://github.com/user-attachments/assets/e1a6810b-ab1a-432e-a14b-efb076b4c92e" />
+
+<img width="1919" height="830" alt="07-windows-monitoring-events" src="https://github.com/user-attachments/assets/bddf6836-ab9b-4a96-bec0-e61ef36526e4" />
 
 ### Account Modification (Event ID 4738)
 
