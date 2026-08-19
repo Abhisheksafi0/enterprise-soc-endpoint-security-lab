@@ -1,0 +1,120 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.08.19",
+  "_id": "sEaAGaABJa10aswFW3yQ",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "input": {
+      "type": "log"
+    },
+    "agent": {
+      "ip": "192.168.2.136",
+      "name": "Shawan_win",
+      "id": "002"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "subjectLogonId": "0x3e7",
+          "targetUserName": "hp",
+          "subjectUserSid": "S-1-5-18",
+          "subjectDomainName": "WORKGROUP",
+          "displayName": "Shrawan Kamat",
+          "targetDomainName": "SHRAWAN-LPA",
+          "targetSid": "S-1-5-21-628578535-2753263625-1435036885-1001",
+          "subjectUserName": "SHRAWAN-LPA$"
+        },
+        "system": {
+          "eventID": "4738",
+          "keywords": "0x8020000000000000",
+          "providerGuid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "level": "0",
+          "channel": "Security",
+          "opcode": "0",
+          "message": "\"A user account was changed.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHRAWAN-LPA$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3E7\r\n\r\nTarget Account:\r\n\tSecurity ID:\t\tS-1-5-21-628578535-2753263625-1435036885-1001\r\n\tAccount Name:\t\thp\r\n\tAccount Domain:\t\tSHRAWAN-LPA\r\n\r\nChanged Attributes:\r\n\tSAM Account Name:\t-\r\n\tDisplay Name:\t\tShrawan Kamat\r\n\tUser Principal Name:\t-\r\n\tHome Directory:\t\t-\r\n\tHome Drive:\t\t-\r\n\tScript Path:\t\t-\r\n\tProfile Path:\t\t-\r\n\tUser Workstations:\t-\r\n\tPassword Last Set:\t-\r\n\tAccount Expires:\t\t-\r\n\tPrimary Group ID:\t-\r\n\tAllowedToDelegateTo:\t-\r\n\tOld UAC Value:\t\t-\r\n\tNew UAC Value:\t\t-\r\n\tUser Account Control:\t-\r\n\tUser Parameters:\t-\r\n\tSID History:\t\t-\r\n\tLogon Hours:\t\t-\r\n\r\nAdditional Information:\r\n\tPrivileges:\t\t-\"",
+          "version": "0",
+          "systemTime": "2026-08-19T10:10:24.9786725Z",
+          "eventRecordID": "3721148",
+          "threadID": "10380",
+          "computer": "SHRAWAN-LPA",
+          "task": "13824",
+          "processID": "1072",
+          "severityValue": "AUDIT_SUCCESS",
+          "providerName": "Microsoft-Windows-Security-Auditing"
+        }
+      }
+    },
+    "rule": {
+      "mail": false,
+      "level": 8,
+      "pci_dss": [
+        "8.1.2",
+        "10.2.5"
+      ],
+      "hipaa": [
+        "164.312.a.2.I",
+        "164.312.a.2.II",
+        "164.312.b"
+      ],
+      "tsc": [
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "User account changed",
+      "groups": [
+        "windows",
+        "windows_security",
+        "account_changed"
+      ],
+      "nist_800_53": [
+        "AC.2",
+        "IA.4",
+        "AU.14",
+        "AC.7"
+      ],
+      "gdpr": [
+        "IV_35.7.d",
+        "IV_32.2"
+      ],
+      "firedtimes": 8,
+      "mitre": {
+        "technique": [
+          "Account Manipulation"
+        ],
+        "id": [
+          "T1098"
+        ],
+        "tactic": [
+          "Persistence"
+        ]
+      },
+      "id": "60110",
+      "gpg13": [
+        "7.10"
+      ]
+    },
+    "location": "EventChannel",
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "id": "1787134235.2149430",
+    "timestamp": "2026-08-19T10:10:35.542+0000"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-08-19T10:10:35.542Z"
+    ]
+  },
+  "highlight": {
+    "data.win.system.eventID": [
+      "@opensearch-dashboards-highlighted-field@4738@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1787134235542
+  ]
+}
