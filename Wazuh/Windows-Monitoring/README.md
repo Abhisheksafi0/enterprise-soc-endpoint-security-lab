@@ -31,22 +31,30 @@ including Microsoft Defender Antivirus and Windows system events.
 
 <img width="1920" height="942" alt="Screenshot 2026-08-17 122014" src="https://github.com/user-attachments/assets/752b2dff-6ced-4006-bc98-5878d3a70d3f" />
 
-### Successful logons Events
+### logons Events(Event ID 4624,4625)
 
 The Wazuh agent successfully collected Windows endpoint events,
 including Successful logons Events.
 
 <img width="1919" height="841" alt="02-windows-monitoring-events" src="https://github.com/user-attachments/assets/e1a6810b-ab1a-432e-a14b-efb076b4c92e" />
 
+### Account Modification (Event ID 4738)
 
+Detects changes made to local domain or machine user accounts.
 
+<img width="1917" height="827" alt="Screenshot 2026-08-19 154535" src="https://github.com/user-attachments/assets/1eb08bd2-7d39-4a82-aa74-f197ba8f19d8" />
 
+### Service Installation Detection (Event ID 7045)
 
+Monitors execution of new system services
 
+<img width="1918" height="781" alt="Screenshot 2026-08-19 155345" src="https://github.com/user-attachments/assets/9f2d2642-8169-4b43-9112-7f6074177400" />
 
+### Special Logon Privileges (Event ID 4672)
 
+Fires when sensitive privileges  are assigned to a user logon session.
 
-
+<img width="1919" height="823" alt="Screenshot 2026-08-19 155120" src="https://github.com/user-attachments/assets/68ddac9b-34e9-4f37-82ff-0f3930735994" />
 
 
 
