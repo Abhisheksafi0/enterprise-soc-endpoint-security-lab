@@ -1,0 +1,212 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.08.20",
+  "_id": "Cd-aIKABabRf3FkyD92A",
+  "_score": 1,
+  "_source": {
+    "syscheck": {
+      "size_before": "5195",
+      "uname_after": "abhis",
+      "mtime_after": "2026-08-20T19:16:01",
+      "size_after": "5211",
+      "md5_before": "9dcd9dffd116f481b88ebfaef8e4a354",
+      "diff": "<     \"agent\": {\n<       \"ip\": \"192.168.2.112\",\n<       \"name\": \"Manwin\",\n---\n>     \"agent\": {\n>       \"ip\": \"192.168.2.112\",fashasfhafsgjbjb\n>       \"name\": \"Manwin\",\n",
+      "win_perm_after": [
+        {
+          "allowed": [
+            "DELETE",
+            "READ_CONTROL",
+            "WRITE_DAC",
+            "WRITE_OWNER",
+            "SYNCHRONIZE",
+            "READ_DATA",
+            "WRITE_DATA",
+            "APPEND_DATA",
+            "READ_EA",
+            "WRITE_EA",
+            "EXECUTE",
+            "READ_ATTRIBUTES",
+            "WRITE_ATTRIBUTES",
+            [
+              "DELETE",
+              "READ_CONTROL",
+              "WRITE_DAC",
+              "WRITE_OWNER",
+              "SYNCHRONIZE",
+              "READ_DATA",
+              "WRITE_DATA",
+              "APPEND_DATA",
+              "READ_EA",
+              "WRITE_EA",
+              "EXECUTE",
+              "READ_ATTRIBUTES",
+              "WRITE_ATTRIBUTES"
+            ],
+            [
+              "DELETE",
+              "READ_CONTROL",
+              "WRITE_DAC",
+              "WRITE_OWNER",
+              "SYNCHRONIZE",
+              "READ_DATA",
+              "WRITE_DATA",
+              "APPEND_DATA",
+              "READ_EA",
+              "WRITE_EA",
+              "EXECUTE",
+              "READ_ATTRIBUTES",
+              "WRITE_ATTRIBUTES"
+            ]
+          ],
+          "name": "SYSTEM"
+        },
+        {
+          "allowed": [
+            "DELETE",
+            "READ_CONTROL",
+            "WRITE_DAC",
+            "WRITE_OWNER",
+            "SYNCHRONIZE",
+            "READ_DATA",
+            "WRITE_DATA",
+            "APPEND_DATA",
+            "READ_EA",
+            "WRITE_EA",
+            "EXECUTE",
+            "READ_ATTRIBUTES",
+            "WRITE_ATTRIBUTES"
+          ],
+          "name": "Administrators"
+        },
+        {
+          "allowed": [
+            "DELETE",
+            "READ_CONTROL",
+            "WRITE_DAC",
+            "WRITE_OWNER",
+            "SYNCHRONIZE",
+            "READ_DATA",
+            "WRITE_DATA",
+            "APPEND_DATA",
+            "READ_EA",
+            "WRITE_EA",
+            "EXECUTE",
+            "READ_ATTRIBUTES",
+            "WRITE_ATTRIBUTES"
+          ],
+          "name": "abhis"
+        }
+      ],
+      "sha256_before": "5ed8ff221a852c20ed5733002f9f1dc123f2e2a123982c67cff07160d5467d21",
+      "mtime_before": "2026-08-18T18:47:35",
+      "mode": "whodata",
+      "path": "c:\\users\\abhis\\onedrive\\desktop\\success login.json",
+      "sha1_after": "b7ab2dfbdb288c1b6924f47220dca15cad0266cc",
+      "changed_attributes": [
+        "size",
+        "mtime",
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "audit": {
+        "process": {
+          "name": "C:\\Users\\abhis\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+          "id": "15768"
+        },
+        "user": {
+          "name": "abhis",
+          "id": "S-1-5-21-1099084074-832591393-3804378270-1001"
+        }
+      },
+      "attrs_after": [
+        "ARCHIVE"
+      ],
+      "uid_after": "S-1-5-21-1099084074-832591393-3804378270-1001",
+      "event": "modified",
+      "md5_after": "ca81dff8a6f63bd5dc0438821cf937d4",
+      "sha1_before": "78da235841acb89e7ac3cd7232a2ac380ffa7710",
+      "sha256_after": "1790639f6edc24e016dac2980824c285cb9d7f07c6132e96fe92220fa00ca352"
+    },
+    "agent": {
+      "ip": "192.168.1.39",
+      "name": "My_Host",
+      "id": "005"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "rule": {
+      "mail": false,
+      "level": 7,
+      "pci_dss": [
+        "11.5"
+      ],
+      "hipaa": [
+        "164.312.c.1",
+        "164.312.c.2"
+      ],
+      "tsc": [
+        "PI1.4",
+        "PI1.5",
+        "CC6.1",
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "Integrity checksum changed.",
+      "groups": [
+        "ossec",
+        "syscheck",
+        "syscheck_entry_modified",
+        "syscheck_file"
+      ],
+      "nist_800_53": [
+        "SI.7"
+      ],
+      "gdpr": [
+        "II_5.1.f"
+      ],
+      "firedtimes": 4,
+      "mitre": {
+        "technique": [
+          "Stored Data Manipulation"
+        ],
+        "id": [
+          "T1565.001"
+        ],
+        "tactic": [
+          "Impact"
+        ]
+      },
+      "id": "550",
+      "gpg13": [
+        "4.11"
+      ]
+    },
+    "decoder": {
+      "name": "syscheck_integrity_changed"
+    },
+    "full_log": "File 'c:\\users\\abhis\\onedrive\\desktop\\success login.json' modified\nMode: whodata\nChanged attributes: size,mtime,md5,sha1,sha256\nSize changed from '5195' to '5211'\nOld modification time was: '1787078855', now it is '1787253361'\nOld md5sum was: '9dcd9dffd116f481b88ebfaef8e4a354'\nNew md5sum is : 'ca81dff8a6f63bd5dc0438821cf937d4'\nOld sha1sum was: '78da235841acb89e7ac3cd7232a2ac380ffa7710'\nNew sha1sum is : 'b7ab2dfbdb288c1b6924f47220dca15cad0266cc'\nOld sha256sum was: '5ed8ff221a852c20ed5733002f9f1dc123f2e2a123982c67cff07160d5467d21'\nNew sha256sum is : '1790639f6edc24e016dac2980824c285cb9d7f07c6132e96fe92220fa00ca352'\n",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2026-08-20T19:16:01.462Z",
+    "location": "syscheck",
+    "id": "1787253361.22307212",
+    "timestamp": "2026-08-20T19:16:01.462+0000"
+  },
+  "fields": {
+    "syscheck.mtime_after": [
+      "2026-08-20T19:16:01.000Z"
+    ],
+    "syscheck.mtime_before": [
+      "2026-08-18T18:47:35.000Z"
+    ],
+    "timestamp": [
+      "2026-08-20T19:16:01.462Z"
+    ],
+    "@timestamp": [
+      "2026-08-20T19:16:01.462Z"
+    ]
+  }
+}

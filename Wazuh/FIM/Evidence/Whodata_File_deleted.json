@@ -1,0 +1,199 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.08.20",
+  "_id": "Ot-bIKABabRf3FkyMN3K",
+  "_score": 1,
+  "_source": {
+    "syscheck": {
+      "uname_after": "abhis",
+      "mtime_after": "2026-08-20T16:03:53",
+      "size_after": "1710284",
+      "win_perm_after": [
+        {
+          "allowed": [
+            "DELETE",
+            "READ_CONTROL",
+            "WRITE_DAC",
+            "WRITE_OWNER",
+            "SYNCHRONIZE",
+            "READ_DATA",
+            "WRITE_DATA",
+            "APPEND_DATA",
+            "READ_EA",
+            "WRITE_EA",
+            "EXECUTE",
+            "READ_ATTRIBUTES",
+            "WRITE_ATTRIBUTES",
+            [
+              "DELETE",
+              "READ_CONTROL",
+              "WRITE_DAC",
+              "WRITE_OWNER",
+              "SYNCHRONIZE",
+              "READ_DATA",
+              "WRITE_DATA",
+              "APPEND_DATA",
+              "READ_EA",
+              "WRITE_EA",
+              "EXECUTE",
+              "READ_ATTRIBUTES",
+              "WRITE_ATTRIBUTES"
+            ],
+            [
+              "DELETE",
+              "READ_CONTROL",
+              "WRITE_DAC",
+              "WRITE_OWNER",
+              "SYNCHRONIZE",
+              "READ_DATA",
+              "WRITE_DATA",
+              "APPEND_DATA",
+              "READ_EA",
+              "WRITE_EA",
+              "EXECUTE",
+              "READ_ATTRIBUTES",
+              "WRITE_ATTRIBUTES"
+            ]
+          ],
+          "name": "SYSTEM"
+        },
+        {
+          "allowed": [
+            "DELETE",
+            "READ_CONTROL",
+            "WRITE_DAC",
+            "WRITE_OWNER",
+            "SYNCHRONIZE",
+            "READ_DATA",
+            "WRITE_DATA",
+            "APPEND_DATA",
+            "READ_EA",
+            "WRITE_EA",
+            "EXECUTE",
+            "READ_ATTRIBUTES",
+            "WRITE_ATTRIBUTES"
+          ],
+          "name": "Administrators"
+        },
+        {
+          "allowed": [
+            "DELETE",
+            "READ_CONTROL",
+            "WRITE_DAC",
+            "WRITE_OWNER",
+            "SYNCHRONIZE",
+            "READ_DATA",
+            "WRITE_DATA",
+            "APPEND_DATA",
+            "READ_EA",
+            "WRITE_EA",
+            "EXECUTE",
+            "READ_ATTRIBUTES",
+            "WRITE_ATTRIBUTES"
+          ],
+          "name": "abhis"
+        }
+      ],
+      "mode": "whodata",
+      "path": "c:\\users\\abhis\\onedrive\\desktop\\2013-08-23-g01pack-ek-traffic.pcap.zip",
+      "sha1_after": "f07c05cf0e56ada7eba4c23b465085037f68843b",
+      "audit": {
+        "process": {
+          "name": "C:\\Windows\\explorer.exe",
+          "id": "9288"
+        },
+        "user": {
+          "name": "abhis",
+          "id": "S-1-5-21-1099084074-832591393-3804378270-1001"
+        }
+      },
+      "attrs_after": [
+        "ARCHIVE"
+      ],
+      "uid_after": "S-1-5-21-1099084074-832591393-3804378270-1001",
+      "event": "deleted",
+      "md5_after": "3fdc673870c81c702a38b7d06503e4a3",
+      "sha256_after": "3f6175c5cdbe9782e8d160d19a5f59a07f294609cf7909c2ab74e43c539373c4"
+    },
+    "agent": {
+      "ip": "192.168.1.39",
+      "name": "My_Host",
+      "id": "005"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "rule": {
+      "mail": false,
+      "level": 7,
+      "pci_dss": [
+        "11.5"
+      ],
+      "hipaa": [
+        "164.312.c.1",
+        "164.312.c.2"
+      ],
+      "tsc": [
+        "PI1.4",
+        "PI1.5",
+        "CC6.1",
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "File deleted.",
+      "groups": [
+        "ossec",
+        "syscheck",
+        "syscheck_entry_deleted",
+        "syscheck_file"
+      ],
+      "nist_800_53": [
+        "SI.7"
+      ],
+      "gdpr": [
+        "II_5.1.f"
+      ],
+      "firedtimes": 111,
+      "mitre": {
+        "technique": [
+          "File Deletion",
+          "Data Destruction"
+        ],
+        "id": [
+          "T1070.004",
+          "T1485"
+        ],
+        "tactic": [
+          "Defense Evasion",
+          "Impact"
+        ]
+      },
+      "id": "553",
+      "gpg13": [
+        "4.11"
+      ]
+    },
+    "decoder": {
+      "name": "syscheck_deleted"
+    },
+    "full_log": "File 'c:\\users\\abhis\\onedrive\\desktop\\2013-08-23-g01pack-ek-traffic.pcap.zip' deleted\nMode: whodata\n",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2026-08-20T19:17:13.705Z",
+    "location": "syscheck",
+    "id": "1787253433.22452583",
+    "timestamp": "2026-08-20T19:17:13.705+0000"
+  },
+  "fields": {
+    "syscheck.mtime_after": [
+      "2026-08-20T16:03:53.000Z"
+    ],
+    "timestamp": [
+      "2026-08-20T19:17:13.705Z"
+    ],
+    "@timestamp": [
+      "2026-08-20T19:17:13.705Z"
+    ]
+  }
+}
